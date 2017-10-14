@@ -1,7 +1,7 @@
 package com.team2915.TankDriveCore.subsystems;
 
 
-import com.ctre.CANTalon;
+import com.ctre.MotorControl.CANTalon;
 import com.kauailabs.navx.frc.AHRS;
 import com.team2915.TankDriveCore.RobotMap;
 import com.team2915.TankDriveCore.commands.DriveWithXbox;
