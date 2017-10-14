@@ -1,6 +1,5 @@
 package com.team2915.TankDriveCore;
 
-import com.ctre.CANTalon;
 import edu.wpi.first.wpilibj.SPI;
 
 /**
