@@ -9,10 +9,6 @@ import edu.wpi.first.wpilibj.command.Scheduler;
  */
 public class Robot extends IterativeRobot {
 
-    //Trajectoyry
-    public static final TrajectoryLibrary trajectoryLibrary = new TrajectoryLibrary(); //This is used to manage the pre-generated .traj files
-
-
     //Human Intface
     public static final IO io = new IO(); //IO manages the xbox controllers and joysticks
     public static final SmartDashboardManager smartDashboardManager = new SmartDashboardManager(); //This is used to manage comunications with the Smart Dashboard
