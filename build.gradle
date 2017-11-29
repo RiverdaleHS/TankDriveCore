@@ -6,16 +6,18 @@ plugins {
 }
 
 frc {
-    team = "5333"
-    robotClass = "com.team2915.robot.Robot"
+    team = "2915"
+    robotClass = "com.team2915.TankDriveCore.Robot"
+    deployDirectory = "/home/lvuser"
 }
 
+
 dependencies {
+
+
     compile wpilib()
     compile talonSrx()
     compile navx()
-
-    compile fileTree(dir: "libs", include: "**/*.jar")
 }
 
 def robotManifest = {

@@ -22,11 +22,6 @@ public class DriveTrain extends Subsystem {
 
 
     public DriveTrain() {
-        //Set masters to Percent Vbus
-        leftMaster.changeControlMode(CANTalon.TalonControlMode.PercentVbus);
-        leftMaster.setFeedbackDevice(CANTalon.FeedbackDevice.QuadEncoder);
-        rightMaster.changeControlMode(CANTalon.TalonControlMode.PercentVbus);
-        rightMaster.setFeedbackDevice(CANTalon.FeedbackDevice.QuadEncoder);
         //set slaves to follow their masters
         leftSlave.changeControlMode(CANTalon.TalonControlMode.Follower);
         leftSlave.set(leftMaster.getDeviceID());
@@ -54,13 +49,6 @@ public class DriveTrain extends Subsystem {
         rightMaster.set(0);
     }
 
-    public int getRightEncoderPosition(){
-        return leftMaster.getEncPosition();
-    }
-
-    public int getLeftEncoderPosition(){
-        return rightMaster.getEncPosition();
-    }
 
     public double getHeading(){
         return ahrs.pidGet();
