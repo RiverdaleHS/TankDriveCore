@@ -2,7 +2,7 @@ plugins {
     id "java"
     id "eclipse"
     id "idea"
-    id "jaci.openrio.gradle.GradleRIO" version "2017.2.3"
+    id "jaci.openrio.gradle.GradleRIO" version "2017.1.5"
 }
 
 frc {
@@ -10,11 +10,11 @@ frc {
     robotClass = "com.team2915.TankDriveCore.Robot"
     deployDirectory = "/home/lvuser"
 }
-
+wpi {
+    opencvVersion = "3.1.0"
+}
 
 dependencies {
-
-
     compile wpilib()
     compile talonSrx()
     compile navx()

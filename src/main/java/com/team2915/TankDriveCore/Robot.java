@@ -21,7 +21,7 @@ public class Robot extends IterativeRobot {
     @Override
     public void robotInit() {
         super.robotInit();
-
+        CameraServer.getInstance().startAutomaticCapture();
     }
 
     @Override
